@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Chicago Kare";
+  src:
+    url("https://cdn.jsdelivr.net/gh/KingDuane/Chicago-Kare@main/ChicagoKare-Regular.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/KingDuane/Chicago-Kare@main/ChicagoKare-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+html {
+  font-family: "Chicago Kare", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
