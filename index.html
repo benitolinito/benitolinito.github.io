@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Lin</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml" sizes="any">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Benjamin Lin's little corner of the internet.">
+  <title>Ben's Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/dorayaki.svg?v=1" type="image/svg+xml" sizes="any">
 </head>
 
 <body>
-    <header>
-        <h1>Benjamin Lin</h1>
-        <p>Student studying CS at Dartmouth College</p>
+  <main class="site-shell">
+    <header class="masthead">
+      <a class="back-link" href="#about">← home</a>
+      <p class="confetti" aria-hidden="true">·　✦　⌑　+　☆　⌁　✧　·　✦　⌑　+　☆　⌁　✧　·</p>
+      <h1>Benjamin Lin</h1>
+      <p class="welcome-line">Welcome to my personal website!</p>
     </header>
 
-    <!-- <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav> -->
+    <figure class="feature-figure">
+      <img src="images/mt-cardigan.jpg" alt="A firetower with a sunset in the background.">
+      <figcaption>A sunset hike at Mt. Cardigan.</figcaption>
+    </figure>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a sophomore studying Computer Science at Dartmouth College. I am from Lebanon, NH and enjoy hiking, playing piano, and video games!</p>
+    <section id="about" class="entry about-entry">
+      <img class="entry-character" src="images/doraemon-40659.png" alt="Doraemon holding a dorayaki">
+      <div>
+        <h2>Hello, World!</h2>
+        <p>I'm Ben, a sophomore studying Computer Science at Dartmouth College. I am from Lebanon, New Hampshire.</p>
+        <p>I enjoy hiking, playing piano, practicing card tricks, and video games (of course). </p>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li> <a href="https://eversource.dartmouth.edu/" target="_blank" rel="noopener">Eversource</a></li>
-            <li><a href="https://majorbuddy.xyz" target="_blank" rel="noopener">MajorBuddy</a></li>
-            <li><a href="https://ani-rec-three.vercel.app/" target="_blank" rel="noopener">AniRec</a></li>
-            <li><a href="https://leetspeak.live/" target="_blank" rel="noopener">LeetSpeak</a></li>
-        </ul>
+    <section id="projects" class="entry projects-entry">
+      <h2>Stuff I've helped build</h2>
+      <p class="section-intro">A few of my projects:</p>
+      <div class="project-grid">
+        <a href="https://eversource.dartmouth.edu/" target="_blank" rel="noopener">
+          <span class="project-symbol"><img src="images/project-icons/eversource.png" alt=""></span>
+          <span><strong>Eversource</strong><small>To collect LLM training data</small></span>
+          <b>↗</b>
+        </a>
+        <a href="https://majorbuddy.xyz" target="_blank" rel="noopener">
+          <span class="project-symbol"><img src="images/project-icons/majorbuddy.svg" alt=""></span>
+          <span><strong>MajorBuddy</strong><small>Academic planner</small></span>
+          <b>↗</b>
+        </a>
+        <a href="https://ani-rec-three.vercel.app/" target="_blank" rel="noopener">
+          <span class="project-symbol"><img src="images/project-icons/anirec.ico" alt=""></span>
+          <span><strong>AniRec</strong><small>Find your next anime</small></span>
+          <b>↗</b>
+        </a>
+        <a href="https://leetspeak.live/" target="_blank" rel="noopener">
+          <span class="project-symbol"><img src="images/project-icons/leetspeak.svg" alt=""></span>
+          <span><strong>LeetSpeak</strong><small>AI interviewer</small></span>
+          <b>↗</b>
+        </a>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <ul>
-            <li>Email: <a href="mailto:blin97198@gmail.com">blin97198@gmail.com</a></li>
-            <li>Phone: <a href="tel:+16033228292">603-322-8292</a></li>
-            <li>GitHub: <a href="https://github.com/benitolinito">benitolinito</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/benjamin-lin-399378349/">Ben Lin</a></li>
-        </ul>
+    <section id="contact" class="entry contact-entry">
+      <div>
+        <h2>Contact me</h2>
+        <p>Feel free to reach out and say hello!</p>
+        <p class="contact-list">
+          <a href="mailto:blin97198@gmail.com">Email me</a>
+          <a href="https://github.com/benitolinito" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/benjamin-lin-399378349/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="tel:+16033228292">Phone</a>
+        </p>
+      </div>
+      <div class="contact-art">
+        <img src="images/doraemon-40668.png" alt="Doraemon waving" class="contact-character contact-character-smile">
+        <img src="images/doraemon-40663.png" alt="Doraemon running with excitement" class="contact-character">
+      </div>
     </section>
+
+    <footer>
+      <p>made with HTML, CSS, and lots of doraemon · <span>★</span></p>
+      <a class="visitor-count" href="https://hits.sh/benitolinito.github.io/" target="_blank" rel="noopener"><img src="https://hits.sh/benitolinito.github.io.svg?style=flat-square&amp;label=WEB%20TRAVELERS&amp;color=1b2735&amp;labelColor=35172f" alt="Web travelers count"></a>
+    </footer>
+  </main>
 </body>
+</html>
