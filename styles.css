@@ -75,6 +75,7 @@ h1 { margin-bottom: 13px; font-size: clamp(2.4rem, 7vw, 5.4rem); line-height: .9
 .project-grid a:hover, .project-grid a:focus-visible { color: var(--plum); border-color: var(--blue); background: #dff7ff; transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--blue); }
 .project-symbol { display: grid; width: 31px; height: 31px; place-items: center; overflow: hidden; border: 1px solid #9bbfc8; border-radius: 50%; background: #fff; }
 .project-symbol img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.project-symbol-letter { color: var(--plum); font-family: "Fredoka", "Trebuchet MS", sans-serif; font-size: 1.05rem; font-weight: 700; background: #f4d835; }
 .project-grid strong, .project-grid small { display: block; }
 .project-grid small { margin-top: 2px; font-size: .7rem; }
 .project-grid b { color: var(--red); }
