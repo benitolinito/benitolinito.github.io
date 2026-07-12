@@ -22,7 +22,7 @@ body {
     linear-gradient(rgba(255, 255, 255, .38) 2px, transparent 2px),
     radial-gradient(circle at center, rgba(255, 255, 255, .85) 0 2px, transparent 2.7px),
     linear-gradient(rgba(66, 191, 240, .78), rgba(66, 191, 240, .78)),
-    url("images/nobita's house.webp");
+    url("images/nobitas-house.webp");
   background-position: 0 0, 0 0, 0 0, center, center;
   background-size: 18px 18px, 18px 18px, 18px 18px, cover, cover;
   background-attachment: scroll, scroll, scroll, fixed, fixed;

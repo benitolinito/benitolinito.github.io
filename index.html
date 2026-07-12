@@ -30,9 +30,9 @@
         <h1>Benjamin Lin</h1>
         <p class="hero-status">welcome to my personal website!</p>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <span class="art-sparkle">★</span>
-        <img src="images/doraemon-40659.png" alt="">
+      <div class="hero-art">
+        <span class="art-sparkle" aria-hidden="true">★</span>
+        <img class="gif-trigger" src="images/doraemon-dorayaki.png" alt="Doraemon — click me!" data-gif title="psst… click me!">
       </div>
     </header>
 
@@ -50,14 +50,14 @@
         <section class="window profile-card">
           <h2 class="window-title">★ profile</h2>
           <div class="window-body">
-            <img class="avatar" src="images/doraemon-40690.png" alt="Doraemon">
-            <p><strong>NAME:</strong> Ben</p>
+            <img class="avatar gif-trigger" src="images/doraemon-propeller.png" alt="Doraemon — click me!" data-gif title="psst… click me!">
+            <p><strong>NAME:</strong> Ben Lin</p>
             <p><strong>LOCATION:</strong> Lebanon, NH</p>
             <p><strong>STATUS:</strong> online! <span class="online-dot">●</span></p>
           </div>
         </section>
 
-        <section class="window likes-card">
+        <a class="window likes-card likes-link" href="likes.html">
           <h2 class="window-title">★ things i like</h2>
           <div class="window-body">
             <ul class="mini-list">
@@ -65,13 +65,15 @@
               <li>♫ playing piano</li>
               <li>♠ card tricks</li>
               <li>★ video games</li>
+              <li>▶ anime</li>
             </ul>
+            <p class="likes-more">see more →</p>
           </div>
-        </section>
+        </a>
 
         <div class="badge-stack" aria-label="Web badges">
-          <span>POWERED BY<br>DORAYAKI</span>
-          <span>MADE WITH<br>HTML, CSS, DORAEMON</span>
+          <button type="button" class="badge" data-gif>POWERED BY<br>DORAYAKI</button>
+          <button type="button" class="badge" data-gif>MADE WITH<br>HTML, CSS, DORAEMON</button>
         </div>
       </aside>
 
@@ -79,9 +81,9 @@
         <section id="about" class="window about-card">
           <h2 class="window-title">★ about me</h2>
           <div class="window-body about-content">
-            <img class="about-doraemon" src="images/doraemon-40668.png" alt="Doraemon waving">
+            <img class="about-doraemon gif-trigger" src="images/doraemon-winking.png" alt="Doraemon waving — click me!" data-gif title="psst… click me!">
             <div>
-              <p>I'm Ben, a sophomore studying Computer Science at Dartmouth College. I am from Lebanon, New Hampshire. I enjoy hiking, playing piano, practicing card tricks, and video games (of course).</p>
+              <p>Hi! I'm Ben, a sophomore studying Computer Science at Dartmouth College. I am from Lebanon, New Hampshire. I enjoy hiking, playing piano, practicing card tricks, and video games (of course).</p>
               <p class="sparkle-line">✦ thanks for stopping by! ✦</p>
             </div>
           </div>
@@ -106,7 +108,7 @@
           <h2 class="window-title">★ contact me</h2>
           <div class="window-body contact-content">
             <div><p>Feel free to reach out and say hello!</p><a class="mail-button" href="mailto:blin97198@gmail.com"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg> send e-mail</a></div>
-            <img src="images/doraemon-40674.png" alt="Doraemon smiling" class="contact-doraemon">
+            <img src="images/doraemon-smiling.png" alt="Doraemon smiling — click me!" class="contact-doraemon gif-trigger" data-gif title="psst… click me!">
             <div class="contact-links"><a href="https://github.com/benitolinito" target="_blank" rel="noopener">GitHub <svg class="icon external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a><a href="https://www.linkedin.com/in/benjamin-lin-399378349/" target="_blank" rel="noopener">LinkedIn <svg class="icon external-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a><a href="tel:+16033228292">Phone <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h4l2 5-2.5 1.7a15 15 0 0 0 5.8 5.8L15 14l5 2v4c-9 .8-16-6.2-16-16Z"/></svg></a></div>
           </div>
         </section>
@@ -115,5 +117,67 @@
 
     <footer><a class="counter" href="https://hits.sh/benitolinito.github.io/" target="_blank" rel="noopener"><img src="https://hits.sh/benitolinito.github.io.svg?style=flat-square&amp;label=WEB%20TRAVELERS&amp;color=1b2735&amp;labelColor=063475" alt="Web travelers count"></a><p>© Ben Lin · made with a little help from the 22nd century</p><p class="footer-stars" aria-hidden="true">★ · ★ · ★</p></footer>
   </main>
+
+  <div class="gif-modal" id="gif-modal" aria-hidden="true">
+    <div class="gif-frame" role="dialog" aria-label="A wild Doraemon appears">
+      <button type="button" class="gif-close" aria-label="Close">×</button>
+      <img id="gif-modal-img" src="" alt="A dancing Doraemon gif">
+      <p class="gif-caption">✦ a wild doraemon appears! ✦</p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var GIFS = [
+        'doraemon-nervous.gif', 'doraemon-smug.gif', 'doraemon-angry.gif', 'doraemon-dorayaki-launch.gif',
+        'doraemon-shivering.gif', 'doraemon-wink.gif', 'doraemon-idea.gif', 'doraemon-eating-dorayaki.gif',
+        'doraemon-sulking.gif', 'doraemon-anywhere-door.gif', 'doraemon-singing.gif', 'doraemon-airplane.gif',
+        'doraemon-nodding.gif', 'doraemon-crying.gif', 'doraemon-fan.gif', 'doraemon-rolling.gif',
+        'doraemon-sleeping.gif', 'doraemon-bye.gif', 'doraemon-happy-jump.gif', 'doraemon-hug.gif',
+        'doraemon-crashing-out.gif'
+      ];
+      var modal = document.getElementById('gif-modal');
+      var img = document.getElementById('gif-modal-img');
+      var closeBtn = modal.querySelector('.gif-close');
+      var deck = [];
+      var lastGif = null;
+
+      function shuffle(arr) {
+        for (var i = arr.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+        }
+        return arr;
+      }
+      function randomGif() {
+        if (deck.length === 0) {
+          deck = shuffle(GIFS.slice());
+          // don't let a fresh deck start with the gif we just showed
+          if (GIFS.length > 1 && deck[deck.length - 1] === lastGif) {
+            deck.unshift(deck.pop());
+          }
+        }
+        lastGif = deck.pop();
+        return 'gifs/' + lastGif;
+      }
+      function openModal() {
+        img.src = randomGif();
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        closeBtn.focus();
+      }
+      function closeModal() {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        img.src = '';
+      }
+      document.querySelectorAll('[data-gif]').forEach(function (b) {
+        b.addEventListener('click', openModal);
+      });
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    })();
+  </script>
 </body>
 </html>
