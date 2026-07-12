@@ -164,11 +164,13 @@
         img.src = randomGif();
         modal.classList.add('open');
         modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
         closeBtn.focus();
       }
       function closeModal() {
         modal.classList.remove('open');
         modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
         img.src = '';
       }
       document.querySelectorAll('[data-gif]').forEach(function (b) {
